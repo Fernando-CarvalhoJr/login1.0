@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Login</title>
 </head>
 
@@ -26,15 +26,13 @@
       <div class="card-login">
         <h1>LOGIN</h1>
          <!--/E-mail/-->
-        <div class="textfield">
-          <label for="usuario">E-Mail / Usuário</label>
-          <input type="text" name="usuario" placeholder="E-Mail / Usuário">
-        </div>
+        <form class="textfield">
+          <label for="email">E-Mail / Usuário</label>
+          <input type="email" id="email" required>
         <!--/Senha/-->
-        <div class="textfield">
           <label for="senha">Senha</label>
-          <input type="password" name="senha" placeholder="Senha">
-        </div>
+          <input type="password" id="senha" required>
+         </form>
         <div>
 
  <!------------------------------/Esqueceu a Senha/------------------------------>
@@ -43,10 +41,12 @@
         </div>
 
  <!--------------------------------/Botão Login/--------------------------------->
-        <button class="bnt-login">Login</button>
+        <button type="submit" class="bnt-login">Login</button>
+        <!-- <button type="submit">Entrar</button> -->
       </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
